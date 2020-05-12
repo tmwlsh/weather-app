@@ -9,14 +9,12 @@ html, body {
 }
 
 .app {
-  background-size: cover;
-  background-position: bottom;
   transition: 0.4s ease-in-out;
-  background-image: url('./assets/cold-bg.jpg');
+  background-color: #13306c;
 }
 
 .app.warm {
-  background-image: url('./assets/warm-bg.jpg');
+  background-color: #8d3131;
 }
 
 main {

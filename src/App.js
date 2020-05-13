@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactGA from 'react-ga';
 
 const api = {
   key: "0ffce85a6f9243b29f8f55d1ff8f98b2",
@@ -6,6 +7,11 @@ const api = {
 }
 
 function App() {
+
+  function initializeReactGA() {
+    ReactGA.initialize('UA-166329067-1');
+    ReactGA.pageview('/homepage');
+  }
 
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
